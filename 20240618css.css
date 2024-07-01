@@ -1,0 +1,111 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+form input, form button {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form input[type=number] {
+  width: 100px;
+}
+form button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #25a25a;
+}
+
+section .sort {
+  text-align: center;
+  margin: 1rem 0;
+}
+section .sort button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+section .sort button:hover {
+  background-color: #217dbb;
+}
+section .todo {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: scaleUp 0.3s forwards;
+}
+section .todo.done {
+  text-decoration: line-through;
+}
+section .todo .todo-text {
+  flex-grow: 1;
+}
+section .todo .todo-time {
+  margin-left: 1rem;
+}
+section .todo button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+section .todo button:hover {
+  color: #3498db;
+}
+section .todo button.complete {
+  color: #2ecc71;
+}
+section .todo button.trash {
+  color: red;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=20240618css.css.map */

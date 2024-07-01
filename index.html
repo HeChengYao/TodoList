@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./20240618css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+
+    <form>
+        <input type="text" placeholder="Todo item" required>
+        <input type="number" min="2021" max="2050" placeholder="Year (YYYY)" required>
+        <input type="number" min="1" max="12" placeholder="Month (MM)" required>
+        <input type="number" min="1" max="31" placeholder="Day (DD)" required>
+        <button type="submit">Add to List</button>
+    </form>
+
+    <section>
+        <div class="sort">
+            <button>自動依日期排序</button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
